@@ -1,0 +1,10 @@
+visualization_venv/
+backend/backend/local_settings.py
+.vscode/
+node_modules/
+backend/backend/__pycache__
+emails.txt
+frontend/node_modules
+venv/
+backend/api/__pycache__
+backend/backend/__pycache__

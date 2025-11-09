@@ -1,0 +1,66 @@
+/* General page layout */
+.db-connection-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Connection Card Styling */
+.connection-card-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #28a745; /* Green accent */
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    padding: 1rem;
+}
+
+.connection-card-wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Main clickable area of the card */
+.connection-card-main {
+    flex: 1;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: inherit; /* Inherit text color */
+}
+
+.connection-card-main:focus-visible {
+    outline: 2px solid #0d6efd; /* Accessibility focus outline */
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+}
+
+.connection-details h5 {
+    color: #333;
+}
+
+/* Actions section of the card */
+.connection-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-btn {
+    width: 85px; /* Fixed width to prevent layout shift */
+}
+
+/* States */
+.loading-state, .error-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

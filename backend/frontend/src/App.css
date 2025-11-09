@@ -1,0 +1,12 @@
+body, #root, .App {
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f7f6;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
